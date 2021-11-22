@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "minecraft:block/netherite_block",
+    "north": "minecraft:block/netherite_block",
+    "south": "minecraft:block/netherite_block",
+    "east": "minecraft:block/netherite_block_side",
+    "west": "minecraft:block/netherite_block_side",
+    "up": "minecraft:block/netherite_block_top",
+    "down": "minecraft:block/netherite_block_top"
+  }
+}
