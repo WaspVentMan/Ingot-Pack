@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/granite",
+	"weight": 15
+      },
+      {
+        "model": "minecraft:block/granite_ingot",
+	"weight": 2
+      }
+    ]
+  }
+}

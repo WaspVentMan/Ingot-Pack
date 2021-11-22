@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/andesite",
+	"weight": 15
+      },
+      {
+        "model": "minecraft:block/andesite_ingot",
+	"weight": 5
+      }
+    ]
+  }
+}
