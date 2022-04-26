@@ -291,7 +291,7 @@
   "selectWorld.gameRules": "Game Rules",
   "selectWorld.mapFeatures": "Generate Structures",
   "selectWorld.mapFeatures.info": "Villages, dungeons etc.",
-  "selectWorld.mapType": "World Type:",
+  "selectWorld.mapType": "World Type",
   "selectWorld.mapType.normal": "Normal",
   "selectWorld.allowCommands": "Allow Cheats",
   "selectWorld.allowCommands.info": "Commands like /gamemode, /experience",
