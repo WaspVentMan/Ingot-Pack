@@ -1,6 +1,6 @@
 {
    "pack": {
-      "pack_format": 9,
-      "description": "The default look and feel of Ingot"
+      "description": "The default Ingot look and feel (not built-in)",
+      "pack_format": 15
    }
 }
