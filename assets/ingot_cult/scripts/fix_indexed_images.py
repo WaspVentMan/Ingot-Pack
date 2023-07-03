@@ -21,8 +21,8 @@ def set_rgb_color_mode(image_paths):
 
     for filepath in image_paths:
         image = Image.open(filepath)
-        if image.mode != "RGB":
-            image = image.convert("RGB")
+        if image.mode != "RGB" or image.mode != "RGBA":
+            image = image.convert("RGBA")
             image.save(filepath)
 
 image_paths = get_images_from_directory(directory)
