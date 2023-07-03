@@ -176,7 +176,7 @@ exact_exceptions = [
     "door",
     "wall",
     "fence",
-    "fence_gate"
+    "fence_gate",
     "button",
     "pressure_plate",
     "banner",
@@ -188,7 +188,15 @@ exact_exceptions = [
     "outer_stairs",
     "frosted_ice",
     "crop",
-    "pressure_plate_up"
+    "pressure_plate_up",
+    "air",
+    "fire0",
+    "fire1",
+    "leaves",
+    "carpet",
+    "grass_block_snow",
+    "skull",
+    "chorus"
 ]
 
 def determine_blocks_to_flatten():
