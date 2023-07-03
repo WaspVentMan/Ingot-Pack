@@ -1,4 +1,4 @@
-# Changes to the color mode of all images within the chosen directory to RGB.
+# Maximizes the lossless PNG compression on all images in a directory.
 
 import os
 from PIL import Image
@@ -14,16 +14,14 @@ def get_images_from_directory(directory):
                 image_paths.append(filepath)
     return image_paths
 
-def set_rgb_color_mode(image_paths):
+def set_png_compression_level(image_paths):
     if len(image_paths) <= 0:
-        print("No images to convert")
+        print("No images to change")
         return
 
     for filepath in image_paths:
         image = Image.open(filepath)
-        if image.mode != "RGB" or image.mode != "RGBA":
-            image = image.convert("RGBA")
-            image.save(filepath)
+        image.save(filepath, format="PNG", compress_level=9)
 
 image_paths = get_images_from_directory(directory)
-set_rgb_color_mode(image_paths)
+set_png_compression_level(image_paths)
