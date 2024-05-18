@@ -3,10 +3,10 @@
 import os
 from shutil import copyfile
 
-placeholder_item_texture = "/home/brine/projects/ingot-pack/assets/minecraft/textures/item/missing_texture.png"
-item_models_directory = "/home/brine/projects/ingot-pack/assets/minecraft/models/item"
-textures_directory = "/home/brine/projects/ingot-pack/assets/minecraft/textures/item"
-vanilla_block_models_directory = "/home/brine/.mc/versions/1.20something/assets/minecraft/models/block"
+placeholder_item_texture = "/home/brine/projects/Ingot\ Pack/assets/minecraft/textures/item/missing_texture.png"
+item_models_directory = "/home/brine/projects/Ingot\ Pack/assets/minecraft/models/item"
+textures_directory = "/home/brine/projects/Ingot\ Pack/assets/minecraft/textures/item"
+vanilla_block_models_directory = "/home/brine/.mc/versions/24w20a/assets/minecraft/models/block"
 
 template_item_model = "{\"parent\": \"minecraft:item/generated\",\"textures\":{\"layer0\":\"minecraft:item/#TEXTURE\"}}"
 
