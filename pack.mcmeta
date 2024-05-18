@@ -1,6 +1,10 @@
 {
    "pack": {
-      "description": "The default Ingot look and feel (not built-in)",
-      "pack_format": 15
+      "pack_format": 33,
+      "supported_formats": {
+         "min_inclusive": 1,
+         "max_inclusive": 33
+      },
+      "description": "The default look and feel of Ingotcraft (not built-in)"
    }
 }
