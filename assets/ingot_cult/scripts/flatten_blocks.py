@@ -3,15 +3,16 @@
 import os
 from shutil import copyfile
 
-placeholder_item_texture = "/home/brine/projects/Ingot\ Pack/assets/minecraft/textures/item/missing_texture.png"
-item_models_directory = "/home/brine/projects/Ingot\ Pack/assets/minecraft/models/item"
-textures_directory = "/home/brine/projects/Ingot\ Pack/assets/minecraft/textures/item"
+placeholder_item_texture = "/home/brine/Projects/ingot-pack/assets/minecraft/textures/item/missing_texture.png"
+item_models_directory = "/home/brine/Projects/ingot-pack/assets/minecraft/models/item"
+textures_directory = "/home/brine/Projects/ingot-pack/assets/minecraft/textures/item"
 vanilla_block_models_directory = "/home/brine/.mc/versions/24w20a/assets/minecraft/models/block"
 
 template_item_model = "{\"parent\": \"minecraft:item/generated\",\"textures\":{\"layer0\":\"minecraft:item/#TEXTURE\"}}"
 
 # hey what the FUCK
 remove_exceptions = [
+    "_copper_bulb_powered",
     "cracked_turtle_egg",
     "big_dripleaf_stem",
     "_fence_gate_wall",
@@ -171,6 +172,16 @@ replace_exceptions = [
     "_z"
 ]
 exact_exceptions = [
+    "crafter_crafting",
+    "crafter_crafting_triggered",
+    "trial_spawner_ominous",
+    "trial_spawner_ejecting_reward",
+    "trial_spawner_ejecting_reward_ominous",
+    "vault_ominous",
+    "vault_unlocking",
+    "vault_unlocking_ominous",
+    "vault_ejecting_reward",
+    "vault_ejecting_reward_ominous",
     "block",
     "stairs",
     "slab",
@@ -239,14 +250,13 @@ def flatten_blocks(blocks):
         if not blockname in existing_textures:
             destination_path = textures_directory + "/" + blockname + ".png"
             copyfile(placeholder_item_texture, destination_path)
-            print("Missing texture added for " + blockname + "!")
+            print("Missing model & texture added for " + blockname + "!")
 
         if not blockname in existing_models:
             model_string = template_item_model.replace("#TEXTURE", blockname)
             destination_path = item_models_directory + "/" + blockname + ".json"
             with open(destination_path, "w") as file:
                 file.write(model_string)
-                print("Missing model added for " + blockname + "!")
             
 
 flatten_blocks(determine_blocks_to_flatten())
