@@ -10,6 +10,7 @@ vanilla_block_models_directory = "/home/brine/.mc/versions/1.20something/assets/
 
 template_item_model = "{\"parent\": \"minecraft:item/generated\",\"textures\":{\"layer0\":\"minecraft:item/#TEXTURE\"}}"
 
+# hey what the FUCK
 remove_exceptions = [
     "cracked_turtle_egg",
     "big_dripleaf_stem",
